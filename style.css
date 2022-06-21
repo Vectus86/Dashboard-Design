@@ -8,7 +8,7 @@
 }
 
 :root {
-  --primary-color: #0e4bf1;
+  --primary-color: blue;
   --panel-color: #fff;
   --text-color: #000;
   --black-light-color: #707070;
@@ -140,6 +140,7 @@ nav.close li a .link-name {
 }
 .nav-links li a:hover i,
 .nav-links li a:hover .link-name {
+  transition: all 0.5 ease;
   color: var(--primary-color);
 }
 body.dark .nav-links li a:hover i,
@@ -232,7 +233,6 @@ nav.close ~ .dashboard .top {
   max-width: 600px;
   width: 100%;
   margin: 0 30px;
-  background-colo: red;
 }
 
 .top .search-box input {
@@ -298,6 +298,7 @@ nav.close ~ .dashboard .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .dash-content .boxes .box {
   display: flex;
@@ -366,6 +367,12 @@ nav.close ~ .dashboard .top {
 }
 
 @media (max-width: 1000px) {
+  body {
+    background-color: #fff;
+  }
+  body.dark {
+    background-color: #242526;
+  }
   nav {
     width: 73px;
   }
@@ -410,17 +417,35 @@ nav.close ~ .dashboard .top {
 }
 
 @media (max-width: 780px) {
+  body {
+    background-color: #fff;
+  }
+  body.dark {
+    background-color: #242526;
+  }
   .dash-content .boxes .box {
     width: calc(100% / 2 - 15px);
     margin-top: 15px;
   }
 }
 @media (max-width: 560px) {
+  body {
+    background-color: #fff;
+  }
+  body.dark {
+    background-color: #242526;
+  }
   .dash-content .boxes .box {
     width: 100%;
   }
 }
 @media (max-width: 400px) {
+  body {
+    background-color: #fff;
+  }
+  body.dark {
+    background-color: #242526;
+  }
   nav {
     width: 0px;
   }
